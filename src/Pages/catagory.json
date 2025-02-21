@@ -1,0 +1,57 @@
+[
+     {
+       "genre": "Action",
+       "src": "https://rukminim2.flixcart.com/image/850/1000/kxnl6kw0/shopsy-poster/4/j/x/medium-john-wick-chapter-2-movies-on-fine-art-paper-hd-quality-original-imaga2dhhjhzyxtb.jpeg?q=20&crop=false",
+       "key": "1",
+       "bcgc":"#ff5209"
+     },
+     {
+       "genre": "Comedy",
+       "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmW0QWIsQKDSEdwXBTCm5076dNHLVrXtYBFA&s",
+       "key": "2",
+       "bcgc":"#d7a4ff"
+     },
+     {
+       "genre": "Drama",
+       "src": "https://mir-s3-cdn-cf.behance.net/project_modules/fs/b307d127256085.560502e8b209e.jpg",
+       "key": "3",
+       "bcgc":"#148a08"
+     },
+     {
+       "genre": "Sci-Fi",
+       "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTaj1WGd3KiUwQxDCWQ01K6AJUXY6tFHqZug&s",
+       "key": "4",
+       "bcgc":"#84c2ff"
+     },
+     {
+       "genre": "Horror",
+       "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb3SGvyD_57rHmMkrTMlfeKF-y9zBn8nDHPg&s",
+       "key": "5",
+       "bcgc":"#902500"
+     },
+     {
+       "genre": "Thriller",
+       "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcCsofWfkHMMDU9fsVzwo3JnxZGc8yx5YsZQ&s",
+       "key": "6",
+       "bcgc":"#7358ff"
+     },
+     {
+       "genre": "Romance",
+       "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoZLDirBb6HRBm76VEYMP8SAbepEoDoSk9Ig&s",
+       "key": "7",
+       "bcgc":"#ff4ade"
+     },
+     {
+       "genre": "Fantasy",
+       "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjXTsYiDRtrHq2aSPeTf3sUdQC_O2fWVVbTA&s",
+       "key": "8",
+       "bcgc":"#e61e32"
+     },
+     {
+       "genre": "Mystery",
+       "src": "https://www.coffeeandcigarettes.co.uk/wp-content/uploads/2017/09/Brimestone.jpg",
+       "key": "9",
+       "bcgc":"#6cd061"
+     }
+   ]
+   
