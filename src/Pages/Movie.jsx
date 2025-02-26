@@ -8,9 +8,11 @@ import {
   Context_border,
   Context_border_provider,
 } from "../Context/Context_border";
+import { useNavigate } from "react-router-dom";
 export default function Movie() {
   let [selectedCategory, setSelectedCategory] = useState([]);
   let [ok, setok] = useState(false);
+  let navigate= useNavigate()
 
   return (
     <Context_border_provider>
@@ -106,6 +108,9 @@ export default function Movie() {
                 },10)
               } else {
                 setok(false);
+                localStorage.setItem("SelectedMovie", JSON.stringify(selectedCategory))
+                navigate('/recommendation')
+                
               }
             }}
             style={{
