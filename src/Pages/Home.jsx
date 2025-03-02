@@ -1,6 +1,9 @@
 import { useState } from "react";
 import "./Home.css";
+import { savetoStorage, decryptingData } from "../encryption";
+import { useNavigate } from "react-router-dom";
 export default function Home() {
+  let navigate= useNavigate()
   let [value, setValue] = useState({
     name: "",
     username: "",
@@ -15,7 +18,6 @@ export default function Home() {
   });
   const changeHandler = (e) => {
     setValue({ ...value, [e.target.name]: e.target.value });
-    console.log(value);
   };
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -25,9 +27,13 @@ export default function Home() {
       email: value.email.length === 0,
       mobile: value.mobile.length === 0,
     };
+    if(!(new_error.name || new_error.username || new_error.email || new_error.mobile)){
+      navigate("/dashboard")
+    }
     setError(new_error);
+    savetoStorage("profile.info", value)
+    
 
-    console.log(error);
   };
   return (
     <div style={{ display: "flex" }}>

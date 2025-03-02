@@ -5,6 +5,7 @@ import Movie from './Pages/Movie';
 import Home from './Pages/Home';
 import Sorry from './Pages/Sorry';
 import Recommendation from './Pages/Recommendation';
+import Profile_dashboard from './Pages/Profile_dashboard';
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
       <Route path="/movies" element={<Movie/>}/>
       <Route path="/recommendation" element={<Recommendation/>}/>
       <Route path="/sorry" element={<Sorry></Sorry>}/>
+      <Route path="/dashboard" element= {<Profile_dashboard/>}/>
     </Routes>
      
     </>
