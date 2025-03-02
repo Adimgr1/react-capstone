@@ -17,6 +17,7 @@ export default function Movie() {
   return (
     <Context_border_provider>
       <>
+      
         <div style={{ display: "flex", flexDirection: "row" }}>
           <div className="left" style={{ width: "50vw" }}>
             <div
@@ -38,7 +39,7 @@ export default function Movie() {
             </div>
             <div
               style={{
-                width: "500px",
+                width: "700px",
                 display: "grid",
                 gridTemplateColumns: "repeat(3, 1fr)",
                 marginTop: "30px",
