@@ -6,10 +6,13 @@ import Home from './Pages/Home';
 import Sorry from './Pages/Sorry';
 import Recommendation from './Pages/Recommendation';
 import Profile_dashboard from './Pages/Profile_dashboard';
+import { Routing_context, Routing_context_Provider } from './Context/RoutingContext';
+import PrivateRouting from './Components/PrivateRouting';
 
 function App() {
 
   return (
+    <Routing_context_Provider>
    <BrowserRouter>
     <>
     <Routes>
@@ -17,12 +20,13 @@ function App() {
       <Route path="/movies" element={<Movie/>}/>
       <Route path="/recommendation" element={<Recommendation/>}/>
       <Route path="/sorry" element={<Sorry></Sorry>}/>
-      <Route path="/dashboard" element= {<Profile_dashboard/>}/>
+      <Route path="/dashboard" element= {<PrivateRouting><Profile_dashboard/></PrivateRouting>}/>
     </Routes>
      
     </>
    
    </BrowserRouter>
+   </Routing_context_Provider>
   )
 }
 

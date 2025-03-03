@@ -2,8 +2,11 @@ import { useState } from "react";
 import "./Home.css";
 import { savetoStorage, decryptingData } from "../encryption";
 import { useNavigate } from "react-router-dom";
+import { useContext } from "react";
+import { Routing_context } from "../Context/RoutingContext";
 export default function Home() {
   let navigate= useNavigate()
+  let {setIsLoggedIn}= useContext(Routing_context);
   let [value, setValue] = useState({
     name: "",
     username: "",
@@ -28,6 +31,8 @@ export default function Home() {
       mobile: value.mobile.length === 0,
     };
     if(!(new_error.name || new_error.username || new_error.email || new_error.mobile)){
+      setIsLoggedIn(true)
+
       navigate("/dashboard")
     }
     setError(new_error);
